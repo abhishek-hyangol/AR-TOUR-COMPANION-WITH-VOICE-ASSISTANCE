@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_title_teaser">AR Tour Companion</string>
+    <string name="app_name">AR Tour Companion</string>
+
+    <string name="calibration_progress">Calibration: %d%%</string>
+    <string name="segmentation">Segmentation</string>
+    <string name="lane_detection">Lane Detection</string>
+    <string name="object_mapping">Object Mapping</string>
+    <string name="safety_mode">Safety Mode</string>
+    <string name="signs_detection">Signs Detection</string>
+    <string name="object_detection">Object Detection</string>
+    <string name="ar_navigation">AR Navigation</string>
+    <string name="driver_score">Driver Score</string>
+    <string name="go">Go</string>
+    <string name="tap_to_select_destination">select a destination</string>
+    <string name="can_not_calculate_new_route">Cannot calculate new route</string>
+    <string name="replay_mode">Replay mode</string>
+    <string name="start_ar_session">Start AR Session</string>
+    <string name="vision_not_supported_title">Device is not supported</string>
+    <string name="vision_not_supported_message">Vision SDK does not support this device yet, check more details at &lt;a href=\"https://docs.mapbox.com/android/vision/overview/#requirements\">docs.mapbox.com&lt;/a></string>
+    <string name="select_session_source">Select source</string>
+    <string name="select_all">Select all</string>
+    <string name="camera_text">Camera</string>
+    <string name="done_text">Done</string>
+    <string name="stop_record">STOP REC</string>
+    <string name="replay_mode_no_sessions_title">There are no any videos to replay</string>
+    <string name="replay_mode_no_sessions_description">You can record them using built-in recorder or upload it via OS</string>
+
+    <plurals name="selected_items">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+
+    <string name="permissions_missing_title">Missing permissions</string>
+    <string name="permissions_missing_message">The following permissions were not granted, please restart the application : %s</string>
+    <string name="request_permissions">Request permissions</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nyatapola">Nyatapola</string>
+    <string name="bhairavnath">Bhairavnath</string>
+    <string name="_55windowpalace">55 window Palace</string>
+    <string name="vatsaladevi">Vatsala Devi</string>
+    <string name="rameshwar">Rameshwar</string>
+    <string name="badrinath">Badrinath</string>
+    <string name="dattratreya">Dattratreya</string>
+    <string name="gopinath">Gopinath</string>
+    <string name="siddhi_laxmi">Siddhi Laxmi</string>
+    <string name="landmarks">Landmarks</string>
+    <string name="testing">testing</string>
+    <string name="sillu_mahadev">Sillu Mahadev</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="aama_ko_bara_pasal">Aama ko Bara Pasal</string>
+    <string name="hotels_guest_house"><![CDATA[Hotels & Guest House]]></string>
+    <string name="atm"><![CDATA[ATMs & Money Exchanges]]></string>
+    <string name="yomari_temple_view">Yomari Temple View</string>
+    <string name="watshala_garden">Watshala Garden</string>
+    <string name="black_oliver">Black Oliver</string>
+    <string name="garuda_bar">Garuda Bar</string>
+    <string name="hungry_kings">Hungry Kings</string>
+    <string name="namaste">Namaste</string>
+    <string name="taumadhi_rooftop">Taumadhi Rooftop</string>
+    <string name="the_golden_eye">The Golden Eye</string>
+    <string name="totey_s_shwarma">Totey\'s Shwarma</string>
+    <string name="tushita_guest_house">Tushita Guest House</string>
+    <string name="shiva_guest_house">Shiva Guest House</string>
+    <string name="golden_gate">Golden Gate</string>
+    <string name="hotel_empire">Hotel Empire</string>
+    <string name="siddhi_home_hotel">Siddhi Home Hotel</string>
+    <string name="kumari_guest_house">Kumari Guest House</string>
+    <string name="khwopa_chhen">Khwopa Chhen</string>
+    <string name="hoteltraditional">HotelTraditional</string>
+    <string name="durbar_atm_longue">Durbar ATM Longue</string>
+    <string name="nabil_bank_limited">Nabil Bank Limited</string>
+    <string name="nyatapola_money_exchange">Nyatapola Money Exchange</string>
+    <string name="citizen_bank">Citizen Bank</string>
+    <string name="bhaktapur_remit">Bhaktapur Remit</string>
+    <string name="nepal_investment_bank">Nepal Investment Bank</string>
+    <string name="nepal_bank_limited">Nepal Bank Limited</string>
+
+
+
+</resources>

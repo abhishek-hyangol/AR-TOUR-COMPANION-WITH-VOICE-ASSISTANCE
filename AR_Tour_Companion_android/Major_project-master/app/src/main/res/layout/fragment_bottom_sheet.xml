@@ -1,0 +1,2161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BottomSheet">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:contentDescription="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <!--        LANDMARKS SCROLLBAR  -->
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/roboto"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="@string/landmarks"
+                android:textColor="@color/teal_700"
+                android:textSize="20sp" />
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="horizontal"
+                    android:scrollbarAlwaysDrawHorizontalTrack="true">
+
+
+
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view6"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/Dattatreya"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/testing"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/dattatraya"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/Dattatreyatxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="158dp"
+                                android:fontFamily="@font/roboto"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="@string/dattratreya"
+                                android:textColor="@color/light_font"
+                                android:textSize="20sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view0"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/nyatapola"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/testing"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/nyatapola"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/nyatapolatxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="28dp"
+                                android:layout_marginTop="160dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="@string/nyatapola"
+                                android:textColor="@color/light_font"
+                                android:textSize="20sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view1"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/bhairavnath"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/testing"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/bhairavnath"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/Bhairavnath"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="158dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="@string/bhairavnath"
+                                android:textColor="@color/light_font"
+                                android:textSize="20sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view9"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/sillu_mahadev"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/vatsaladevi"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/silu_mahadev"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/silluMahadevtxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/sillu_mahadev"
+                                android:layout_marginStart="11dp"
+                                android:layout_marginTop="160dp"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:textColor="@color/light_font"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view8"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/siddhi_laxmi"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/siddhi_laxmi"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/siddhi_laxmi"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/siddhiLaxmitxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/siddhi_laxmi"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="160dp"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:textColor="@color/light_font"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view2"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/window"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/_55windowpalace"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/_5_window_palace"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/windowText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="135dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="@string/_55windowpalace"
+                                android:textColor="@color/light_font"
+                                android:textSize="20sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view3"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/vatsalaDevi"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/vatsaladevi"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/vatsala_devi"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/VatsalaDevitxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="18dp"
+                                android:layout_marginTop="160dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="@string/vatsaladevi"
+                                android:textColor="@color/light_font"
+                                android:textSize="20sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view4"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/Badrinath"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/badrinath"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/badrinath"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/Badrinathtxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="160dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="@string/badrinath"
+                                android:textColor="@color/light_font"
+                                android:textSize="20sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view5"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/Rameshwar"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/rameshwar"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/rameshwar"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/rameshwartxttxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="22dp"
+                                android:layout_marginTop="160dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="@string/rameshwar"
+                                android:textColor="@color/light_font"
+                                android:textSize="20sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view7"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/krishna"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/gopinath"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/krishna_temple"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/gopinath"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/gopinath"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginTop="160dp"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:textColor="@color/light_font"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <!--        RESTAURANTS -->
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/restaurants"
+                android:textColor="@color/teal_700"
+                android:textSize="20sp"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"/>
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="horizontal"
+                    android:scrollbarAlwaysDrawHorizontalTrack="true">
+
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view20"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/Yomari"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/gopinath"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/yomari_temple_view_restaurant"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/Yomaritxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/yomari_temple_view"
+                                android:layout_marginStart="18dp"
+                                android:layout_marginTop="136dp"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:textColor="@color/light_font"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view19"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/watshala"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/rameshwar"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/watshala_garden"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/watshalatxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginTop="138dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="@string/watshala_garden"
+                                android:textColor="@color/light_font"
+                                android:textSize="20sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view11"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/Bara"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/testing"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/aama_ko_bara_pasal"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/baratxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="138dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="@string/aama_ko_bara_pasal"
+                                android:textColor="@color/light_font"
+                                android:textSize="20sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view12"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/testing"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/black_oliver"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/blacktxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="21dp"
+                                android:layout_marginTop="160dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="@string/black_oliver"
+                                android:textColor="@color/light_font"
+                                android:textSize="20sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view13"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/Garuda"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/testing"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/garuda_bar"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/Garudatxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="158dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="@string/garuda_bar"
+                                android:textColor="@color/light_font"
+                                android:textSize="20sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view14"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/hungry"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/vatsaladevi"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/hungry_kings"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/hungrytxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/hungry_kings"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="160dp"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:textColor="@color/light_font"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view15"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/namaste"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/siddhi_laxmi"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/namaste"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/namastetxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/namaste"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="150dp"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:textColor="@color/light_font"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view16"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/taumadhi"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/_55windowpalace"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/taumadhi_rooftop"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/taumadhiText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="28dp"
+                                android:layout_marginTop="134dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="@string/taumadhi_rooftop"
+                                android:textColor="@color/light_font"
+                                android:textSize="20sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view17"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/gold"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/vatsaladevi"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/the_golden_eyes_restaurant_cafe"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/goldtxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="18dp"
+                                android:layout_marginTop="138dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="@string/the_golden_eye"
+                                android:textColor="@color/light_font"
+                                android:textSize="20sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view18"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/Totey"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/badrinath"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/totey_s_shawarma"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/Toteytxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="138dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="@string/totey_s_shwarma"
+                                android:textColor="@color/light_font"
+                                android:textSize="20sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!--        Hotels -->
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/hotels_guest_house"
+                android:textColor="@color/teal_700"
+                android:textSize="20sp"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"/>
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="horizontal"
+                    android:scrollbarAlwaysDrawHorizontalTrack="true">
+
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view29"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/inn"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/rameshwar"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/inn_sangrahalaya"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/inntxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="138dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="Inn Sangrahalaya"
+                                android:textColor="@color/light_font"
+                                android:textSize="20sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view28"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/tushita"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/_55windowpalace"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/tushita_guest_house"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/tushitaText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="138dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="@string/tushita_guest_house"
+                                android:textColor="@color/light_font"
+                                android:textSize="20sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view26"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/shiva"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/vatsaladevi"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/shiva_guest_house"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/shivatxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/shiva_guest_house"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="138dp"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:textColor="@color/light_font"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view21"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/golden_gate"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/gopinath"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/golden_gate_guest_house"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/golden_gatext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/golden_gate"
+                                android:layout_marginStart="18dp"
+                                android:layout_marginTop="160dp"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:textColor="@color/light_font"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view22"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/empire"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/rameshwar"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/hotel_empire"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/empiretxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="160dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="@string/hotel_empire"
+                                android:textColor="@color/light_font"
+                                android:textSize="20sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view27"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/siddhi"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/siddhi_laxmi"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/siddhi_home_hotel"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/siddhitetxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/siddhi_home_hotel"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="138dp"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:textColor="@color/light_font"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view25"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/kumari"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/testing"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/kumari_guest_house"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/kumaritxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="18dp"
+                                android:layout_marginTop="138dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="@string/kumari_guest_house"
+                                android:textColor="@color/light_font"
+                                android:textSize="20sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view24"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/chhen"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/testing"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/khwopa_chhen"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/chhentxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginTop="144dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="@string/khwopa_chhen"
+                                android:textColor="@color/light_font"
+                                android:textSize="20sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view23"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/traditional"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/testing"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/hotel_traditional"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/traditionaltxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginTop="144dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="@string/hoteltraditional"
+                                android:textColor="@color/light_font"
+                                android:textSize="20sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!--        ATMs & Money Exchange -->
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/atm"
+                android:textColor="@color/teal_700"
+                android:textSize="20sp"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"/>
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="horizontal"
+                    android:scrollbarAlwaysDrawHorizontalTrack="true">
+
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view36"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/durbar"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/testing"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/durbar_atm_lounge"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/durbartxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="28dp"
+                                android:layout_marginTop="138dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="@string/durbar_atm_longue"
+                                android:textColor="@color/light_font"
+                                android:textSize="20sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view37"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/nabil"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/testing"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/nabilbank"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/nabiltxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="135dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="@string/nabil_bank_limited"
+                                android:textColor="@color/light_font"
+                                android:textSize="20sp" />
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view32"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/nyatapolmoney"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/vatsaladevi"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/nyatapola_money_exchange"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/nyatapoltxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/nyatapola_money_exchange"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="114dp"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:textColor="@color/light_font"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view33"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/citizen"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/gopinath"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/citizen_bank"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/citizentext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/citizen_bank"
+                                android:layout_marginStart="18dp"
+                                android:layout_marginTop="160dp"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:textColor="@color/light_font"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view30"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/bktremit"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/rameshwar"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/bhaktapur_remit"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/bktremitxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="55dp"
+                                android:layout_marginTop="138dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="@string/bhaktapur_remit"
+                                android:textColor="@color/light_font"
+                                android:textSize="20sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view34"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/investment"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/nepal_investment_bank"
+                                android:contentDescription="@string/rameshwar"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/nepal_investment_bank"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/investmentxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="116dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="@string/nepal_investment_bank"
+                                android:textColor="@color/light_font"
+                                android:textSize="20sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view35"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/limited"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/siddhi_laxmi"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/nepal_bank_limited"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <TextView
+                                android:id="@+id/limtxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/nepal_bank_limited"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="138dp"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:textColor="@color/light_font"
+                                android:shadowColor="@color/text_shadow"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"/>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view38"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/money"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/testing"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/money_gram"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+
+                    <!-- Textview and ImageButton of place inside rounded corner-->
+                    <LinearLayout
+                        android:id="@+id/card_view31"
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="216dp"
+
+                        android:layout_marginTop="168dp"
+                        android:background="@drawable/button_shape"
+
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageButton
+                                android:id="@+id/temple"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_shape"
+                                android:contentDescription="@string/_55windowpalace"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/temple_money_changer"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

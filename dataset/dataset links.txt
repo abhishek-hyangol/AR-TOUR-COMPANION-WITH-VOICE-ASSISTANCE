@@ -1,0 +1,6 @@
+#dataset used to train CNNs-LSTM
+https://drive.google.com/file/d/11T0fv2BvHFlRHvsVpM-8v-nZDjx62Rnl/view?usp=sharing
+
+
+#dataset used to train MobilenetSSD V2
+https://drive.google.com/drive/folders/1AjsvAzWeob8byyo7nxIHulGSds3krOzf?usp=sharing
